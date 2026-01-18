@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>FAQs</Title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body>
+<div class="heading">
+    <header>Taniti</header>
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">About The Island</button>
+        <div class="dropdown-content">
+           <a href="lodging.html">Lodging</a>
+           <a href="entertain.html">Entertainment/Sightseeing</a>
+           <a href="restuarants.html">Restuarants</a>
+           <a href="transportation.html">Transportation</a>
+           <a href="shopping.html">Shopping</a>
+        </div>
+    </div>
+    <a href="faqs.html">FAQs</a>
+</div>
+</div>
+<h9>Frenquently Requested Information</h9>
+<div class="faq_container">
+<button class="question">What is the power standards?</button>
+<div class="answer">
+    <p>Power outlets are 120 volts (the same as in the United States). </p>
+</div>
+<button class="question">What times can alcohol be served?</button>
+<div class="answer">
+    <p>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</p>
+</div>
+<button class="question">What is the drinking age?</button>
+<div class="answer">
+    <p>The drinking age on Taniti is 18 and the drinking age is not strictly enforced</p>
+</div><button class="question">Do they speak English in Taniti?</button>
+<div class="answer">
+    <p>Many younger Tanitians speak fluent english. Very little English is spoken in rural area, especially by the older residents</p>
+</div>
+<button class="question">Is there a hospital?</button>
+<div class="answer">
+    <p>There is one hospital and serveral clinics. The hospital has multiligual employees</p>
+</div>
+<button class="question">Is there crime?</button>
+<div class="answer">
+    <p>Violent crime is rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes/p>
+</div>
+<button class="question">What happens on the holidays?</button>
+<div class="answer">
+    <p>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</p>
+</div>
+<button class="question">What currency is used?</button>
+<div class="answer">
+    <p>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</p>
+</div>
+</div>
+<script>
+    var acc = document.getElementsByClassName("question");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<footer>
+    <h1>Taniti Copyright &copy; Kayla Webb D479 project</h1>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="lodging.html">Lodging</a></li>
+        <li><a href="entertain.html">Entertainment/Sightseeing</a></li>
+        <li><a href="restuarants.html">Restuarants</a></li>
+        <li><a href="transportation.html">Transportation</a></li>
+        <li><a href="shopping.html">Shopping</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+    </ul>
+</footer>
+</body>
+</html>
